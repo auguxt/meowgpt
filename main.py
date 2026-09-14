@@ -22,6 +22,9 @@ class Message(BaseModel):
 def home():
     return {"message": "MeowGPT API is running 🐾"}
 
+@app.options("/meow")
+def meow_options():
+    return {}
 
 @app.post("/meow")
 def meow(message: Message):
