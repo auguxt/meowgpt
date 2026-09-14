@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeowGPT 🐾</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo">🐾</div>
+      <div>
+        <h1>MeowGPT</h1>
+        <p>Talk to the meow machine.</p>
+      </div>
+      <span class="status">● Online</span>
+    </header>
+
+    <section id="chat" class="chat">
+      <div class="message bot">
+        <div class="avatar">🐱</div>
+        <div class="bubble">Meow! Send me a message 🐾</div>
+      </div>
+    </section>
+
+    <form id="form" class="composer">
+      <input id="input" type="text" placeholder="Type something..." autocomplete="off">
+      <button id="send" type="submit">Send ➤</button>
+    </form>
+
+    <div id="error" class="error"></div>
+    <footer>Powered by your FastAPI backend</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
