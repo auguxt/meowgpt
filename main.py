@@ -7,15 +7,11 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-    "https://meowgpt-uwen.onrender.com",
-    "https://meow.auguxt.dev",
-    ],
+    allow_origins=["*"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 class Message(BaseModel):
     text: str
