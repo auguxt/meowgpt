@@ -8,7 +8,8 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://meowgpt-uwen.onrender.com"
+    "https://meowgpt-uwen.onrender.com",
+    "https://meow.auguxt.dev",
     ],
     allow_credentials=False,
     allow_methods=["*"],
