@@ -9,8 +9,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://meowgpt-uwen.onrender.com"],
     allow_credentials=False,
-    allow_methods=["POST"],
-    allow_headers=["Content-Type"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
@@ -29,8 +29,10 @@ def meow(message: Message):
 
     if text.lower() == "exit":
         response = "meow bye🐾"
+
     elif len(text) < 10:
         response = "meow " * random.randint(1, 5)
+
     else:
         response = "meow " * random.randint(6, 30)
 
